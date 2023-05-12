@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memories Page</title>
+	<style>
+        h1{
+            margin-left: 200px;
+        }
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+		#add-memory {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: middle centre;
+            margin-left: 270px;
+			bottom: 20px;
+			right: 20px;
+			width: 50px;
+			height: 50px;
+			background-color: #081b30;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 70px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		
+		#add-form {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			z-index: 2;
+		}
+		
+		#memory-list {
+			margin-top: 50px;
+		}
+		
+		.memory {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color: #f0f0f0;
+			border-radius: 5px;
+		}
+		
+		.most-viewed {
+			background-color: #099250;
+			color: #fff;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Memories Page</h1>
+	<span id="add-memory" onclick="showForm()">+</span>
+	<div id="add-form">
+		<form>
+			<label>
+				Title:
+				<input type="text" name="title" required>
+			</label>
+			<br>
+            <br></br>
+			<label>
+				Description:
+				<textarea name="description" rows="3" required></textarea>
+			</label>
+			<br>
+			<input type="submit" value="Add Memory">
+			<button type="button" onclick="hideForm()">Cancel</button>
+		</form>
+	</div>
+	<div id="memory-list">
+		<h2>Most Viewed Memories</h2>
+		<ul>
+			<li class="memory most-viewed">Memory 1</li>
+			<li class="memory">Memory 2</li>
+			<li class="memory">Memory 3</li>
+		</ul>
+	</div>
+	
+	<script>
+		// Function to show the add memory form
+		function showForm() {
+			var form = document.getElementById("add-form");
+			form.style.display = "block";
+		}
+		
+		// Function to hide the add memory form
+		function hideForm() {
+			var form = document.getElementById("add-form");
+			form.style.display = "none";
+		}
+	</script>
+</body>
+</html>

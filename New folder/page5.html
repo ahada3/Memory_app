@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Sentiment</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  background-color: #c29d9d;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1em;
+  margin-left: 110px;
+}
+p{
+
+    font-size: 20px;
+    font-variant: small-caps;
+    margin-left: 300px;
+}
+form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label[for="happy"] {
+  background-color: #ffd700;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+label[for="sad"] {
+  background-color: #4169e1;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+label[for="relaxed"] {
+  background-color: #228b22;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+label[for="excited"] {
+  background-color: #ff69b4;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+label[for="angry"] {
+  background-color: #8b0000;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+    </style>
+</head>
+<body>
+	<h1>Memory Sentiment</h1><br>
+	<p>How do you feel about this memory?</p>
+	<br>
+    <form>
+		<input type="radio" name="mood" value="happy" id="happy">
+		<label for="happy">Happy</label><br>
+		<input type="radio" name="mood" value="sad" id="sad">
+		<label for="sad">Sad</label><br>
+		<input type="radio" name="mood" value="relaxed" id="relaxed">
+		<label for="relaxed">Relaxed</label><br>
+		<input type="radio" name="mood" value="excited" id="excited">
+		<label for="excited">Excited</label><br>
+		<input type="radio" name="mood" value="angry" id="angry">
+		<label for="angry">Angry</label><br>
+        <label for="Edit">Edit</label>
+		<input type="text" name="Edit_mood" placeholder="Enter custom mood">
+		<input type="submit" value="Submit">
+	</form>
+	<h2>Most Viewed Memories</h2>
+	<p>Here are some of the most viewed memories:</p>
+	<ul>
+		<li>Memory 1</li>
+		<li>Memory 2</li>
+		<li>Memory 3</li>
+	</ul>
+</body>
+</html>
